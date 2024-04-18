@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CubeAct">
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/AppImageView"
+        android:src="@drawable/cubephoto" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume = a * a * a = a³"
+        style="@style/AppText"
+        android:textColor="#808000"
+
+
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the value of a"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+    <Button
+        android:id="@+id/button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Calculate Volume"
+        android:textColor="#808000"
+        android:textStyle="bold|italic"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+
+
+        />
+    <Spinner
+        android:id="@+id/spinner0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_toRightOf="@+id/editText" />
+    <TextView
+        android:id="@+id/hiddenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hidden Text"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="#808000"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/backBtn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="back"
+        android:textColor="#808000"
+        android:textStyle="bold|italic"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+
+
+
+        />
+</RelativeLayout>

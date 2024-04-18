@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".CylinderAct">
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/AppImageView"
+        android:src="@drawable/cylinderphoto" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume = π * r² * h "
+
+        android:textColor="#00726f"
+        style="@style/AppText"
+
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/editTextcy0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the value of r"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+    <EditText
+        android:id="@+id/editTextcy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the value of h"
+        android:textSize="18sp"
+        android:layout_below="@+id/editTextcy0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <Button
+        android:id="@+id/button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Calculate Volume"
+        android:textColor="#00726f"
+        android:textStyle="bold|italic"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/editTextcy1"
+        android:layout_centerHorizontal="true"
+
+
+        />
+    <TextView
+        android:id="@+id/hiddenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hidden Text"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#00726f"
+        android:textStyle="bold|italic"
+        />
+    <Spinner
+        android:id="@+id/spinner0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/editTextcy0"
+        android:layout_toRightOf="@+id/editTextcy0" />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner0"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/editTextcy1"
+        android:layout_toRightOf="@+id/editTextcy1" />
+    <Button
+        android:id="@+id/backBtn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="back"
+        android:textColor="#00726f"
+        android:textStyle="bold|italic"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+
+
+
+        />
+</RelativeLayout>

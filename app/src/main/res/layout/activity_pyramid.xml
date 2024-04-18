@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".PyramidAct">
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/AppImageView"
+        android:src="@drawable/pyramidphoto" />
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume = 1/3 * A * h "
+
+        android:textColor="#875d00"
+        style="@style/AppText"
+
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A : The Area of Base"
+        android:textSize="15sp"
+        android:textColor="#875d00"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView0"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:id="@+id/editTextpy0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the value of A"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+    <EditText
+        android:id="@+id/editTextpy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the value of h"
+        android:textSize="18sp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextpy0"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Calculate Volume"
+        android:textColor="#875d00"
+        android:textStyle="bold|italic"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/editTextpy1"
+        android:layout_centerHorizontal="true"
+
+
+        />
+    <TextView
+        android:id="@+id/hiddenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hidden Text"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#875d00"
+        android:textStyle="bold|italic"
+        />
+    <Spinner
+        android:id="@+id/spinner0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/editTextpy0"
+        android:layout_toRightOf="@+id/editTextpy0" />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner0"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/editTextpy1"
+        android:layout_toRightOf="@+id/editTextpy1" />
+    <Button
+        android:id="@+id/backBtn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="back"
+        android:textColor="#875d00"
+        android:textStyle="bold|italic"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+
+
+
+        />
+</RelativeLayout>
